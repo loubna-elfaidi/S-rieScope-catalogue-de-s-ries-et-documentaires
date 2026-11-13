@@ -1,0 +1,62 @@
+.catalogue {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+.card {
+    background-color: #191919;
+    border: 1px solid #393939;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    /* width: 20%; */
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    background-color: #252525;
+}
+
+.card-body {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #FAFAFA;
+}
+
+.card-meta {
+    font-size: 12px;
+    color: #EEEEEE;
+}
+
+.card-genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.badge {
+    font-size: 11px;
+    padding: 2px 8px;
+    border: 1px solid #393939;
+    border-radius: 999px;
+    background-color: #252525;
+    color: #BABABA;
+}
+
+@media (min-width: 768px) {
+    .catalogue {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+}
