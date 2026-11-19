@@ -19,6 +19,7 @@ async function chargerSeries() {
   afficherSeries(state.series);
 }
 
+
 state.series  = await getAll();
 
 remplirGenres(state.series);
